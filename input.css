@@ -1,0 +1,43 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+
+@theme {
+  /* Definición de colores personalizados */
+  --color-primary: #2b5ba3;
+  --color-primary-dark: #1a3a6c;
+  --color-accent: #f9c846;
+  --color-background-light: #f6f8fb;
+  --color-background-dark: #0f172a;
+
+  /* Fuentes y bordes */
+  --font-display: "Lexend", sans-serif;
+  
+  --radius: 1rem;
+  --radius-lg: 1.5rem;
+  --radius-xl: 2.5rem;
+}
+
+/* Tus estilos manuales que ya tenías */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+}
