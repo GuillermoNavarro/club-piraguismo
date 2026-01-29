@@ -27,12 +27,11 @@
                     <div class="hidden sm:block h-8 w-px bg-slate-200 dark:bg-slate-700"></div>
                     <div class="h-10 w-10 relative hover:scale-105 transition-transform duration-300">
                         <img alt="Chiclana Dragons" class="w-full h-full object-contain"
-                           src="./images/logo chiclana_dragon.png" />
+                            src="./images/logo chiclana_dragon.png" />
                     </div>
                     <div class="hidden sm:block h-8 w-px bg-slate-200 dark:bg-slate-700"></div>
                     <div class="h-10 w-10 relative hover:scale-105 transition-transform duration-300">
-                        <img alt="BCS x ellas" class="w-full h-full object-contain"
-                           src="" />
+                        <img alt="BCS x ellas" class="w-full h-full object-contain" src="" />
                     </div>
                 </div>
 
@@ -120,7 +119,7 @@
         </header>
         <section class="relative w-full h-[85vh] min-h-150 flex items-center justify-center overflow-hidden">
 
-            <div class="absolute inset-0 bg-cover bg-center bg-no-repeat bg-scroll md:bg-fixed"
+            <div class="absolute inset-0 bg-cover bg-center bg-no-repeat bg-scroll lg:bg-fixed"
                 style="background-image: url('./images/dragon_boat.jpeg');">
             </div>
 
@@ -215,54 +214,70 @@
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6 px-4">
 
-                    <div
-                        class="group bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-sm border border-slate-100 dark:border-slate-700 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-                        <div
-                            class="w-12 h-12 bg-yellow-100 dark:bg-yellow-900/30 rounded-xl flex items-center justify-center text-yellow-600 dark:text-yellow-400 mb-4 group-hover:scale-110 transition-transform">
-                            <span class="material-symbols-outlined text-3xl">school</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Piragüismo</h3>
-                        <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed mb-4">
-                           Categorias de piraguismo, kayak y Dragon Boat .
-                        </p>
-                        <a href="#"
-                            class="inline-flex items-center text-xs font-bold text-yellow-600 hover:text-yellow-700 uppercase tracking-wide">
-                            Ampliar <span class="material-symbols-outlined text-sm ml-1">arrow_forward</span>
-                        </a>
-                    </div>
+                    <button onclick="abrirModal('embarcaciones')"
+                        class="group w-full text-left bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-sm border border-slate-100 dark:border-slate-700 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full">
 
-                    <div
-                        class="group bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-sm border border-slate-100 dark:border-slate-700 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
                         <div
-                            class="w-12 h-12 bg-pink-100 dark:bg-pink-900/30 rounded-xl flex items-center justify-center text-pink-600 dark:text-pink-400 mb-4 group-hover:scale-110 transition-transform">
+                            class="w-12 h-12 bg-yellow-100 dark:bg-yellow-900/30 rounded-xl flex items-center justify-center text-yellow-600 dark:text-yellow-400 mb-4 group-hover:scale-110 transition-transform shrink-0">
+                            <span class="material-symbols-outlined text-3xl">kayaking</span>
+                        </div>
+
+                        <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2 shrink-0">Piragüismo</h3>
+
+                        <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed mb-6 flex-1">
+                            Categorías de piragüismo, kayak de mar y todas las modalidades de iniciación.
+                        </p>
+
+                        <div
+                            class="inline-flex items-center text-xs font-bold text-yellow-600 hover:text-yellow-700 uppercase tracking-wide transition-colors mt-auto shrink-0">
+                            Ampliar <span
+                                class="material-symbols-outlined text-sm ml-1 transform group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                        </div>
+                    </button>
+                    <button onclick="abrirModal('social')"
+                        class="group w-full text-left bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-sm border border-slate-100 dark:border-slate-700 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full">
+
+                        <div
+                            class="w-12 h-12 bg-pink-100 dark:bg-pink-900/30 rounded-xl flex items-center justify-center text-pink-600 dark:text-pink-400 mb-4 group-hover:scale-110 transition-transform shrink-0">
                             <span class="material-symbols-outlined text-3xl">volunteer_activism</span>
                         </div>
-                        <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Dragon Boat & BCS</h3>
-                        <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed mb-4">
-                            Categoría para supervivientes de cáncer de mama. Deporte, terapia y compañerismo
-                            en un solo barco.
-                        </p>
-                        <a href="#"
-                            class="inline-flex items-center text-xs font-bold text-pink-600 hover:text-pink-700 uppercase tracking-wide">
-                            Conoce el proyecto <span class="material-symbols-outlined text-sm ml-1">arrow_forward</span>
-                        </a>
-                    </div>
 
-                    <div
-                        class="group bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-sm border border-slate-100 dark:border-slate-700 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                        <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2 shrink-0">Dragon Boat & BCS
+                        </h3>
+
+                        <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed mb-6 flex-1">
+                            Categoría para supervivientes de cáncer de mama. Deporte, terapia y compañerismo en un solo
+                            barco.
+                        </p>
+
                         <div
-                            class="w-12 h-12 bg-blue-100 dark:bg-blue-900/30 rounded-xl flex items-center justify-center text-primary dark:text-blue-400 mb-4 group-hover:scale-110 transition-transform">
+                            class="inline-flex items-center text-xs font-bold text-pink-600 hover:text-pink-700 uppercase tracking-wide transition-colors mt-auto shrink-0">
+                            Conoce el proyecto <span
+                                class="material-symbols-outlined text-sm ml-1 transform group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                        </div>
+                    </button>
+
+                    <button onclick="abrirModal('palmares')"
+                        class="group w-full text-left bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-sm border border-slate-100 dark:border-slate-700 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full">
+
+                        <div
+                            class="w-12 h-12 bg-blue-100 dark:bg-blue-900/30 rounded-xl flex items-center justify-center text-blue-600 dark:text-blue-400 mb-4 group-hover:scale-110 transition-transform shrink-0">
                             <span class="material-symbols-outlined text-3xl">trophy</span>
                         </div>
-                        <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Equipo Competición</h3>
-                        <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed mb-4">
+
+                        <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2 shrink-0">Equipo Competición
+                        </h3>
+
+                        <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed mb-6 flex-1">
                             Alto rendimiento en Kayak de Mar y Pista. Entrenamientos diarios y competiciones nacionales.
                         </p>
-                        <a href="#"
-                            class="inline-flex items-center text-xs font-bold text-primary hover:text-blue-700 uppercase tracking-wide">
-                            Ver Palmarés <span class="material-symbols-outlined text-sm ml-1">arrow_forward</span>
-                        </a>
-                    </div>
+
+                        <div
+                            class="inline-flex items-center text-xs font-bold text-blue-600 hover:text-blue-700 uppercase tracking-wide transition-colors mt-auto shrink-0">
+                            Ver Palmarés <span
+                                class="material-symbols-outlined text-sm ml-1 transform group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                        </div>
+                    </button>
 
                 </div>
             </section>
@@ -281,7 +296,7 @@
                     <div
                         class="min-w-65 snap-center flex flex-col rounded-2xl bg-white dark:bg-slate-800 shadow-md border-b-4 border-primary overflow-hidden">
                         <div class="h-32 w-full bg-slate-200 bg-cover bg-center relative"
-                            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB1zZKd89lam0B5jONSBHAEjf-jYl62BfJ8kQF2lY6BKvyscUYMftRjSSQ_yvqwAbToN7sdB1rPL2kflq_NyxWcy1MMznN13CRg73eNrboekq6WMHRuavcdwfbo5G0Vo96ifVhyNnVpBD0-h94gL0N2EodwS5eujIIM9MvH-1LxcX91V2O7Hcm7aO-z0dkgMD7fiMhkjcdBKTOZm1IEw9hKFePs0CUyq4YqzxneHYXLEciMdkTknrh_j9TQURkGzAXeDbXNW7qWnlgI");'>
+                            style='background-image: url("./images/bg_default.png");'>
                             <div
                                 class="absolute bottom-0 left-0 w-full h-1/2 bg-linear-to-t from-black/60 to-transparent">
                             </div>
@@ -298,7 +313,7 @@
                     <div
                         class="min-w-65 snap-center flex flex-col rounded-2xl bg-white dark:bg-slate-800 shadow-md border-b-4 border-accent overflow-hidden">
                         <div class="h-32 w-full bg-slate-200 bg-cover bg-center relative"
-                            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCA_2StVqr_lo8q33ASStT5gicwmW6KDLYvv5MZbqLggNTT_NYsseFkOREFEIYXsGUjlVDpPjcSHfyWPQ2D0C66ri44EQNk-ByMcoxsDrHrD_poElK_fVJGEowDonspaaxk9VAtOgnVfiBVu-tvOtnHdLGC_knK2mwkzV_upKEFpTJoEFKjuYq2RUycqnCralT2rjkyBzbbOs0O-enwtUhf9v51W1geT1h75XvIEAMW3Wud1ht-mkq1BzOBYFVQtLw_ydi99LmE3yA5");'>
+                            style='background-image: url("./images/bg_default.png");'>
                             <div
                                 class="absolute bottom-0 left-0 w-full h-1/2 bg-linear-to-t from-black/60 to-transparent">
                             </div>
@@ -315,7 +330,7 @@
                     <div
                         class="min-w-65 snap-center flex flex-col rounded-2xl bg-white dark:bg-slate-800 shadow-md border-b-4 border-slate-400 overflow-hidden">
                         <div class="h-32 w-full bg-slate-200 bg-cover bg-center relative"
-                            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBEJqV1b0Tmu7S-1rAi6-xhKk37Q-0_vqucZ5GX5UnW3XcgrRzhkdE381JDn6M03DYjWUAfLFGTfPtgmrHaNjy0ylKIElrNXnUj3IeCFRgBgYzer2QYd2GzQxuqyALu_iR3T-iUBkITirwohkmfvNZkTBshqOawe5c9Uhlr5Wz4TT4BuItdA-Sig9CREqYYrP_YsJsq_D3zj6MSEK4EtPDC9mBrXaSOrw4GDGqm_MQU4WS6Mw2pFK1kzuDPoFHFkO_jGBrXsLpu4BkV");'>
+                            style='background-image: url("./images/bg_default.png");;'>
                             <div
                                 class="absolute bottom-0 left-0 w-full h-1/2 bg-linear-to-t from-black/60 to-transparent">
                             </div>
@@ -343,7 +358,7 @@
                         class="group relative aspect-square overflow-hidden rounded-2xl bg-slate-100 shadow-sm cursor-pointer">
                         <img alt="Regata Sevilla"
                             class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
-                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxwKtY2abzEKOZ7y8DCziXhdjbtQafAm-gvKihRW46CvXXtnRxcZsgEM05QkZ0wXU7CGQgsEjGX-xN4NRS9KOtEMK9Lp3umVndQ4UYS4686cu-XcZN-Pi9qsr936F7isNDoXIz2d50eWHivynoFu2E74uT98EJgKvudLQexp_StgGSXN621lwWijExJK5myNN-rqg6XhR5m1TODLZPZShG2DKpqXnTdkh17BnrHnZ28oYK9CkR_kkC4r__k7H3a-AaNCQdGLvWceWw" />
+                            src="./images/bg_default.png" />
                         <div
                             class="absolute inset-0 bg-linear-to-t from-slate-900/80 via-transparent to-transparent flex items-end p-3 opacity-100">
                             <div>
@@ -357,7 +372,7 @@
                         class="group relative aspect-square overflow-hidden rounded-2xl bg-slate-100 shadow-sm cursor-pointer">
                         <img alt="Dragon Boat"
                             class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
-                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcUHrKv_Ya6Ea2IiRClwTOLno3NUIKBpSVF15grULLazXHbdUFDyA5sTHJuYcrqXYf3oxfLOi_Kc9OfMVGrB8jD86Ps1NuOXNttefD694fhC9__xLPioM-3StVstgGhxxVbbm9kfU_0Zo9Yl6l9N9J6hAV29j16Ac7MnXtU00CpX4m9nqKk3UFXAYwG7Awnd1nGa0O2ZbCU-tVA_s5Pvc-Bnk186Hkouv9y-sHAOWq6Yrl_ksRssC3LQhvJiGjcva4QH_U2eCdaQnZ" />
+                            src="./images/bg_default.png" />
                         <div
                             class="absolute inset-0 bg-linear-to-t from-slate-900/80 via-transparent to-transparent flex items-end p-3 opacity-100">
                             <div>
@@ -372,7 +387,7 @@
                         class="group relative aspect-square overflow-hidden rounded-2xl bg-slate-100 shadow-sm cursor-pointer">
                         <img alt="Entrenamiento"
                             class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
-                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKAavcxSpDhjNf4Dh_tUs9_pS1-8ph0s4B8ZhuHmn9QxOUmrrmKUWP6FOVL6zHpCB422GWjThAkbQ1YFpyKLP1NTi1ys8hLMHrXE0s7g-Kj5BV6A1xjO76fAKG_D4QcumvWumloc9epbbJwU9JCDZthXQtYnobcoPzl_TWmNMll0LvN7Hqwmis0j7kabINE_KdglgkBRg6oJNF7OlPeGcYe-qFVpbfpvCEAinVj7XodTxPZxE4Cv6hMp7AK05tdZ6-aLWr5FWH5Nin" />
+                            src="./images/bg_default.png" />
                         <div
                             class="absolute inset-0 bg-linear-to-t from-slate-900/80 via-transparent to-transparent flex items-end p-3 opacity-100">
                             <div>
@@ -386,7 +401,7 @@
                         class="group relative aspect-square overflow-hidden rounded-2xl bg-slate-100 shadow-sm cursor-pointer">
                         <img alt="K4 Men"
                             class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
-                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNdMF5kOwr8h5VFt4MyeuQqZDpLsg5VCa6CR1dsGSR-C6djMzi9eBmN2XjZ4ZmK1CU6M66E9ltaLG4Ne0tvD-s9BmYYcVrH1znP-xt8-mYC_1Xs3tIkMTtXR0-GLsDLWVTQgoRVDcvX2rKWkpJRIERrKGBjpcvdtuYjGfUqS7qPz81Q79Kp3Wl5SRFF3237tSNnPN9CLWNAo9MHKvuOKE3yEv2A4i3AP5ZUsxDGWWNugs3uV72Q2GcQKzVco7FqMklL4qgX_GzJ5-x" />
+                            src="./images/bg_default.png" />
                         <div
                             class="absolute inset-0 bg-linear-to-t from-slate-900/80 via-transparent to-transparent flex items-end p-3 opacity-100">
                             <div>
@@ -404,91 +419,156 @@
                 </button>
             </div>
             <div class="h-10"></div>
-  
-<section id="contacto" class="px-4 py-12 mb-8 scroll-mt-24">
-    <div class="max-w-6xl mx-auto bg-white dark:bg-slate-800 rounded-3xl shadow-xl overflow-hidden border border-slate-100 dark:border-slate-700">
-        <div class="grid grid-cols-1 lg:grid-cols-2">
-            
-            <div class="bg-slate-900 p-10 text-white relative flex flex-col justify-between overflow-hidden">
-                <div class="absolute top-0 left-0 w-full h-full opacity-10" 
-                     style="background-image: radial-gradient(#ffffff 1px, transparent 1px); background-size: 20px 20px;"></div>
-                
-                <div class="relative z-10">
-                    <span class="inline-block py-1 px-3 rounded-full bg-accent/20 text-accent text-xs font-bold uppercase tracking-widest mb-6 border border-accent/20">
-                        Contacta con nosotros
-                    </span>
-                    <h2 class="text-4xl font-black mb-4">¿Listo para remar?</h2>
-                    <p class="text-slate-400 text-lg mb-8">
-                        Ven a probar gratis una sesión en el Centro Deportivo Nautico "Las Albinas". Te dejamos todo el material.
-                    </p>
-                    
-                    <div class="flex flex-col gap-6">
-                        <div class="flex items-start gap-4">
-                            <div class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center shrink-0">
-                                <a href='https://maps.google.com/?q=Centro+Deportivo+Náutico+"Las+Albinas"+de+Chiclana"' target="_blank" class="material-symbols-outlined text-accent">location_on</a>
+
+            <section id="contacto" class="px-4 py-12 mb-8 scroll-mt-24">
+                <div
+                    class="max-w-6xl mx-auto bg-white dark:bg-slate-800 rounded-3xl shadow-xl overflow-hidden border border-slate-100 dark:border-slate-700">
+                    <div class="grid grid-cols-1 lg:grid-cols-2">
+
+                        <div
+                            class="bg-slate-900 p-10 text-white relative flex flex-col justify-between overflow-hidden">
+                            <div class="absolute top-0 left-0 w-full h-full opacity-10"
+                                style="background-image: radial-gradient(#ffffff 1px, transparent 1px); background-size: 20px 20px;">
                             </div>
-                            <div>
-                                <h4 class="font-bold text-lg">Ubicación</h4>
-                                <p class="text-slate-400 text-sm">Poligono Industrial "Urbisur", Recinto Ferial<br>Centro Deportivo Náutico "Las Albinas" de Chiclana</p>
+
+                            <div class="relative z-10">
+                                <span
+                                    class="inline-block py-1 px-3 rounded-full bg-accent/20 text-accent text-xs font-bold uppercase tracking-widest mb-6 border border-accent/20">
+                                    Contacta con nosotros
+                                </span>
+                                <h2 class="text-4xl font-black mb-4">¿Listo para remar?</h2>
+                                <p class="text-slate-200 text-lg mb-8">
+                                    Ven a probar gratis una sesión en el Centro Deportivo Nautico "Las Albinas". Te
+                                    dejamos todo el material.
+                                </p>
+
+                                <div class="flex flex-col gap-6">
+                                    <a href="https://www.google.com/maps/search/?api=1&query=Centro+Deportivo+Nautico+Las+Albinas+Chiclana"
+                                        target="_blank" rel="noopener noreferrer"
+                                        class="flex items-start gap-4 p-2 -ml-2 rounded-xl transition-colors duration-300 hover:bg-white/10 group cursor-pointer">
+
+                                        <div
+                                            class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center shrink-0 group-hover:bg-accent group-hover:text-slate-900 transition-colors duration-300">
+                                            <span
+                                                class="material-symbols-outlined text-accent group-hover:text-slate-900">location_on</span>
+                                        </div>
+
+                                        <div>
+                                            <h4 class="font-bold text-lg group-hover:text-accent transition-colors">
+                                                Ubicación</h4>
+                                            <p class="text-slate-200 text-sm">
+                                                Poligono Industrial "Urbisur", Recinto Ferial<br>
+                                                Centro Deportivo Náutico "Las Albinas"
+                                            </p>
+                                        </div>
+                                    </a>
+                                    <a href="mailto:info@clubpiraguismociclana.com"
+                                        class="flex items-start gap-4 p-2 -ml-2 rounded-xl transition-colors duration-300 hover:bg-white/10 group cursor-pointer">
+
+                                        <div
+                                            class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center shrink-0 group-hover:bg-accent group-hover:text-slate-900 transition-colors duration-300">
+                                            <span
+                                                class="material-symbols-outlined text-accent group-hover:text-slate-900">mail</span>
+                                        </div>
+
+                                        <div>
+                                            <h4 class="font-bold text-lg group-hover:text-accent transition-colors">
+                                                Email</h4>
+                                            <p class="text-slate-200 text-sm">info@clubpiraguismociclana.com</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="relative z-10 mt-12 pt-8 border-t border-white/10">
+                                <p class="text-xs text-slate-500 uppercase font-bold tracking-wider">Síguenos en redes
+                                </p>
                             </div>
                         </div>
-                        
-                        <div class="flex items-start gap-4">
-                            <div class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center shrink-0">
-                                <span class="material-symbols-outlined text-accent">mail</span>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-lg">Email</h4>
-                                <p class="text-slate-400 text-sm">info@clubpiraguismociclana.com</p>
-                            </div>
+
+                        <div class="p-10 bg-white dark:bg-slate-800">
+                            <form name="contacto" method="POST" data-netlify="true" class="flex flex-col gap-6">
+
+                                <input type="hidden" name="form-name" value="contacto" />
+
+                                <div>
+                                    <label for="nombre" class="block text-xs font-bold text-slate-500 uppercase mb-2">Tu
+                                        Nombre</label>
+                                    <input type="text" id="nombre" name="nombre" required placeholder="Ej: María García"
+                                        class="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl px-4 py-3 outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all dark:text-white">
+                                </div>
+
+                                <div>
+                                    <label for="email" class="block text-xs font-bold text-slate-500 uppercase mb-2">Tu
+                                        Email</label>
+                                    <input type="email" id="email" name="email" required
+                                        placeholder="Ej: maria@ejemplo.com"
+                                        class="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl px-4 py-3 outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all dark:text-white">
+                                </div>
+
+                                <div>
+                                    <label for="mensaje"
+                                        class="block text-xs font-bold text-slate-500 uppercase mb-2">Mensaje</label>
+                                    <textarea id="mensaje" name="mensaje" rows="4" required
+                                        placeholder="Hola, me gustaría probar una clase de Dragon Boat..."
+                                        class="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl px-4 py-3 outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all dark:text-white resize-none"></textarea>
+                                </div>
+
+                                <button type="submit"
+                                    class="w-full py-4 rounded-xl bg-primary hover:bg-primary-dark text-white font-black text-sm uppercase tracking-wider shadow-lg shadow-blue-500/30 hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2 cursor-pointer">
+                                    <span>Enviar Mensaje</span>
+                                    <span class="material-symbols-outlined text-sm">send</span>
+                                </button>
+
+                                <p class="text-xs text-center text-slate-400 mt-2">
+
+                                </p>
+                            </form>
                         </div>
+
                     </div>
                 </div>
-
-                <div class="relative z-10 mt-12 pt-8 border-t border-white/10">
-                    <p class="text-xs text-slate-500 uppercase font-bold tracking-wider">Síguenos en redes</p>
-                    </div>
-            </div>
-
-            <div class="p-10 bg-white dark:bg-slate-800">
-                <form name="contacto" method="POST" data-netlify="true" class="flex flex-col gap-6">
-                    
-                    <input type="hidden" name="form-name" value="contacto" />
-
-                    <div>
-                        <label for="nombre" class="block text-xs font-bold text-slate-500 uppercase mb-2">Tu Nombre</label>
-                        <input type="text" id="nombre" name="nombre" required placeholder="Ej: María García"
-                               class="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl px-4 py-3 outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all dark:text-white">
-                    </div>
-
-                    <div>
-                        <label for="email" class="block text-xs font-bold text-slate-500 uppercase mb-2">Tu Email</label>
-                        <input type="email" id="email" name="email" required placeholder="Ej: maria@ejemplo.com"
-                               class="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl px-4 py-3 outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all dark:text-white">
-                    </div>
-
-                    <div>
-                        <label for="mensaje" class="block text-xs font-bold text-slate-500 uppercase mb-2">Mensaje</label>
-                        <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Hola, me gustaría probar una clase de Dragon Boat..."
-                                  class="w-full bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl px-4 py-3 outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all dark:text-white resize-none"></textarea>
-                    </div>
-
-                    <button type="submit" class="w-full py-4 rounded-xl bg-primary hover:bg-primary-dark text-white font-black text-sm uppercase tracking-wider shadow-lg shadow-blue-500/30 hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2 cursor-pointer">
-                        <span>Enviar Mensaje</span>
-                        <span class="material-symbols-outlined text-sm">send</span>
-                    </button>
-                    
-                    <p class="text-xs text-center text-slate-400 mt-2">
-                    
-                    </p>
-                </form>
-            </div>
-
-        </div>
-    </div>
-</section>
+            </section>
         </main>
     </div>
+    <div id="miModal" class="fixed inset-0 z-50 hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+
+        <div id="modal-overlay" onclick="cerrarModal()"
+            class="fixed inset-0 bg-slate-900/80 backdrop-blur-sm transition-opacity" onclick="toggleModal()"></div>
+
+        <div class="fixed inset-0 z-10 overflow-y-auto pointer-events-none">
+            <div class="flex min-h-full items-center justify-center p-4 text-center">
+
+                <div
+                    class="pointer-events-auto relative transform overflow-hidden rounded-2xl bg-white dark:bg-slate-800 text-left shadow-2xl transition-all sm:w-full sm:max-w-lg border border-slate-100 dark:border-slate-700">
+
+                    <div
+                        class="flex justify-between items-center px-6 py-4 border-b border-slate-100 dark:border-slate-700">
+                        <h3 class="text-xl font-black text-slate-900 dark:text-white" id="modalTitulo"></h3>
+                        <button onclick="cerrarModal()"
+                            class="text-slate-400 hover:text-red-500 transition-colors cursor-pointer">
+                            <span class="material-symbols-outlined">close</span>
+                        </button>
+                    </div>
+
+                    <div class="px-6 py-6">
+                        <p id="modalDescripcion" class="text-slate-500 dark:text-slate-300"></p>
+                    </div>
+
+                    <div class="bg-slate-50 dark:bg-slate-900/50 px-6 py-4 flex justify-end">
+                        <button type="button" onclick="cerrarModal()"
+                            class="rounded-xl bg-primary px-4 py-2.5 text-sm font-bold text-white shadow-sm hover:bg-primary-dark transition-all">
+                            Cerrar Ventana
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
     <script src="./script.js"></script>
 </body>
 
