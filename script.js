@@ -13,15 +13,20 @@ const INFO_MODALIDADES = {
             'descripcion': 'El barco dragón es una embarcación tradicional china que se utiliza en competiciones de remo en equipo. Está decorado con una cabeza y una cola de dragón, y puede transportar a un gran número de remeros que trabajan al unísono para propulsar el barco a través del agua.',
         }
     },
-    'social':{
+    'social': {
         'titulo': 'Paradragon & BCS',
         'descripcion': 'El Paradragon es una modalidad inclusiva del deporte del remo en barco dragón, diseñada para personas con discapacidades físicas o sensoriales. Esta actividad promueve la integración social, el trabajo en equipo y la superación personal, permitiendo que todos los participantes disfruten de la experiencia de remar juntos en un entorno acuático.',
     },
     'palmares': {
         'titulo': 'Competicion & Palmares',
         'descripcion': 'Nuestro club de remo cuenta con una destacada trayectoria en competiciones nacionales e internacionales. A lo largo de los años, hemos acumulado numerosos títulos y reconocimientos en diversas modalidades de remo, gracias al esfuerzo y dedicación de nuestros atletas y entrenadores. Nuestro palmarés refleja nuestro compromiso con la excelencia deportiva y el espíritu competitivo.',
+    },
+    'legal': {
+        'titulo': 'Política de Privacidad',
+        'descripcion': 'En nuestro sitio web, nos comprometemos a proteger su privacidad y garantizar la seguridad de sus datos personales. Esta política de privacidad describe cómo recopilamos, utilizamos y protegemos la información que usted nos proporciona al utilizar nuestro sitio web. Al utilizar nuestro sitio, usted acepta las prácticas descritas en esta política.'
     }
 }
+
 
 function cerrarModal() {
     document.getElementById('miModal').classList.add('hidden');
@@ -33,32 +38,43 @@ function abrirModal(modalidad) {
     const descripcionElem = document.getElementById('modalDescripcion');
     const info = INFO_MODALIDADES[modalidad];
     modal.classList.toggle('hidden');
-    
-    switch(modalidad) {
+
+    switch (modalidad) {
         case 'embarcaciones':
             let texto = '';
             tituloElem.textContent = "Embarcaciones";
             Object.values(info).forEach((submodalidad) => {
                 texto += `
-                    <div class="mb-4
+                    <div class="mb-4">
                     <h4 class="font-bold text-lg text-slate-900 dark:text-white">${submodalidad.titulo}</h4>
                     <p class="text-sm"> ${submodalidad.descripcion}</p>
                     </div>`;
             });
             descripcionElem.innerHTML = texto;
-        break
+            break
         case 'social':
             tituloElem.textContent = info.titulo;
             descripcionElem.textContent = info.descripcion;
-        break
+            break
         case 'palmares':
             tituloElem.textContent = info.titulo;
             descripcionElem.textContent = info.descripcion;
-        break
+            break
+        case 'legal':
+            tituloElem.textContent = info.titulo;
+            descripcionElem.textContent = info.descripcion;
+            break
     }
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+
+    const yearElem = document.getElementById('year')
+    
+    if (yearElem){
+        yearElem.textContent = new Date().getFullYear();
+    };
+    
 
     const menuBtn = document.getElementById('mobile-menu-btn');
     const mobileMenu = document.getElementById('mobile-menu');
