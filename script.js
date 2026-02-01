@@ -24,6 +24,10 @@ const INFO_MODALIDADES = {
     'legal': {
         'titulo': 'Política de Privacidad',
         'descripcion': 'En nuestro sitio web, nos comprometemos a proteger su privacidad y garantizar la seguridad de sus datos personales. Esta política de privacidad describe cómo recopilamos, utilizamos y protegemos la información que usted nos proporciona al utilizar nuestro sitio web. Al utilizar nuestro sitio, usted acepta las prácticas descritas en esta política.'
+    },
+    'construccion': {
+        'titulo': 'Pagina en Construcción',
+        'descripcion': '<img src="./images/img_const.png" class="mx-auto w-1/2" alt="En construcción" />'
     }
 }
 
@@ -64,10 +68,16 @@ function abrirModal(modalidad) {
             tituloElem.textContent = info.titulo;
             descripcionElem.textContent = info.descripcion;
             break
+        case 'construccion':
+            tituloElem.textContent = info.titulo;
+            descripcionElem.innerHTML = info.descripcion;
+            break
     }
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+
+    abrirModal('construccion');
 
     const yearElem = document.getElementById('year')
     
