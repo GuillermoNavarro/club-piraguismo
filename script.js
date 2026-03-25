@@ -28,8 +28,33 @@ const INFO_MODALIDADES = {
     'construccion': {
         'titulo': 'Pagina en Construcción',
         'descripcion': '<img src="./images/img_const.png" class="mx-auto w-1/2" alt="En construcción" />'
+    },
+    'socios': {
+        'titulo': 'Zona de Socios Proximamente',
+        'descripcion': `<div class="space-y-4">
+                            <p>Estamos digitalizando el club para mejorar tu experiencia. Muy pronto podrás:</p>
+                            <ul class="list-disc pl-5 space-y-2 text-sm">
+                                <li>Consultar el <strong>calendario de eventos</strong> y regatas.</li>
+                                <li>Gestionar tu <strong>carnet digital</strong> y cuotas.</li>
+                                <li>Consulta de estatutos, actas de asambleas y reglamentos de seguridad en el agua</li>
+                            </ul>
+                            <div class="p-4 bg-blue-50 dark:bg-slate-900/50 rounded-lg border border-blue-100 dark:border-slate-700">
+                                <p class="text-xs text-blue-600 dark:text-blue-400 font-bold text-center">
+                                    ¿Aún no eres socio? Pásate por el club o escríbenos por el formulario de contacto.
+                                </p>
+                            </div>
+                        </div>`
+        
     }
+
+
 }
+
+const socios = document.getElementById("zona_privada")
+
+socios.addEventListener("click", () =>{
+    abrirModal('socios');
+});
 
 
 function cerrarModal() {
@@ -72,12 +97,16 @@ function abrirModal(modalidad) {
             tituloElem.textContent = info.titulo;
             descripcionElem.innerHTML = info.descripcion;
             break
+        case 'socios':
+            tituloElem.textContent = info.titulo;
+            descripcionElem.innerHTML = info.descripcion;
+            break
     }
 }
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    abrirModal('construccion');
+    //abrirModal('construccion');
 
     const yearElem = document.getElementById('year')
     
