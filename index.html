@@ -142,18 +142,17 @@
                     Uniendo la tradición del kayak con la fuerza del Dragon Boat.<br class="hidden md:block"> Tu club
                     deportivo en Chiclana.
                 </p>
-
-                <!--<div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto items-center">
+                <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto items-center mt-8">
                     <a href="#contacto"
-                        class="w-full sm:w-auto px-8 py-3.5 bg-white text-slate-900 font-black rounded-full hover:bg-slate-100 hover:scale-105 transition-all shadow-xl shadow-white/10 uppercase text-xs md:text-sm tracking-wide">
+                    class="group relative overflow-hidden px-8 py-3 bg-white/10 backdrop-blur-md border border-white/20 text-white font-bold rounded-full hover:bg-white/20 hover:border-white/40 transition-all active:scale-95 text-sm tracking-wide flex items-center gap-2 shadow-xl shadow-black/5">
+                        
                         Únete al equipo
+                        
+                        <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform duration-300">
+                            arrow_forward
+                        </span>
                     </a>
-
-                    <button onclick="document.getElementById('modalidades').scrollIntoView({behavior: 'smooth'})"
-                        class="w-full sm:w-auto px-8 py-3.5 bg-slate-900/40 backdrop-blur-md border border-white/30 text-white font-bold rounded-full hover:bg-slate-900/60 transition-all uppercase text-xs md:text-sm tracking-wide hover:border-white/60">
-                        Nuestras Modalidades
-                    </button>
-                </div>-->
+                </div>
 
             </div>
         </section>
@@ -166,12 +165,20 @@
                     piragüismo con intensidad y compromiso.
                 </p>
             </div>
-            <!--
-            <div class="px-4">
-                <div class="grid grid-cols-2 gap-3">
-
-                   
-                    
+            <section class="py-10 bg-white dark:bg-slate-900 border-y border-slate-100 dark:border-slate-800">
+                        <div class="px-4 mb-8"> <h2 class="text-lg font-bold tracking-tight text-slate-900 dark:text-white flex items-center gap-2">
+                                <span class="w-1.5 h-6 bg-accent rounded-full"></span>
+                                Colaboradores y Patrocinadores
+                            </h2>
+                        </div>
+                        <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-100 md:opacity-70 md:grayscale md:hover:grayscale-0 md:hover:opacity-100 transition-all">
+                            <img src="./images/logo-ayuntamiento.png" alt="Ayuntamiento de Chiclana" class="h-12 w-auto">
+                            <img src="./images/logo-diputacion.png" alt="Diputación de Cádiz" class="h-12 w-auto">
+                            <img src="./images/logo-junta.png" alt="Junta de Andalucía" class="h-12 w-auto">
+                        </div>
+            </section>
+            <!--<div class="px-4">
+                <div class="grid grid-cols-2 gap-3">                 
                     <section class="py-6">
                         <h3 class="text-sm font-bold text-slate-500 uppercase tracking-widest mb-4 px-4">Previsión próxima semana</h3>
     
@@ -198,18 +205,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        -->
-            <section class="py-10 bg-white dark:bg-slate-900 border-y border-slate-100 dark:border-slate-800">
-                        <div class="px-4 mb-4">
-                            <h3 class="text-xs font-bold text-slate-500 uppercase tracking-widest text-center">Colaboradores y Patrocinadores</h3>
-                        </div>
-                        <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-100 md:opacity-70 md:grayscale md:hover:grayscale-0 md:hover:opacity-100 transition-all">
-                            <img src="./images/logo-ayuntamiento.png" alt="Ayuntamiento de Chiclana" class="h-12 w-auto">
-                            <img src="./images/logo-diputacion.png" alt="Diputación de Cádiz" class="h-12 w-auto">
-                            <img src="./images/logo-junta.png" alt="Junta de Andalucía" class="h-12 w-auto">
-                            </div>
-                    </section>
+            </div>-->
             <section id="actividades" class="py-8 scroll-mt-24">
                 <div class="flex items-center justify-between px-4 mb-6">
                     <h2 class="text-lg font-bold tracking-tight text-slate-900 dark:text-white flex items-center gap-2">
@@ -225,7 +221,7 @@
 
                         <div
                             class="w-12 h-12 bg-yellow-100 dark:bg-yellow-900/30 rounded-xl flex items-center justify-center text-yellow-600 dark:text-yellow-400 mb-4 group-hover:scale-110 transition-transform shrink-0">
-                            <span class="material-symbols-outlined text-3xl">kayaking</span>
+                           <span class="material-symbols-outlined text-3xl">kayaking</span>
                         </div>
 
                         <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2 shrink-0">Piragüismo</h3>
@@ -287,143 +283,6 @@
 
                 </div>
             </section>
-
-            <!--
-            <div class="flex flex-col gap-4 py-6">
-                <div class="flex items-center justify-between px-4">
-                    <h2 class="text-lg font-bold tracking-tight text-slate-900 dark:text-white flex items-center gap-2">
-                        <span class="w-1.5 h-6 bg-primary rounded-full"></span>
-                        Noticias Recientes
-                    </h2>
-                    <a class="text-xs font-bold text-primary hover:text-blue-700 uppercase tracking-wide" href="#">Ver
-                        todo</a>
-                </div>
-                <div class="flex gap-4 overflow-x-auto px-4 pb-4 hide-scrollbar snap-x snap-mandatory">
-                    <div
-                        class="min-w-65 snap-center flex flex-col rounded-2xl bg-white dark:bg-slate-800 shadow-md border-b-4 border-primary overflow-hidden">
-                        <div class="h-32 w-full bg-slate-200 bg-cover bg-center relative"
-                            style='background-image: url("./images/bg_default.png");'>
-                            <div
-                                class="absolute bottom-0 left-0 w-full h-1/2 bg-linear-to-t from-black/60 to-transparent">
-                            </div>
-                            <span
-                                class="absolute bottom-2 left-3 text-white text-[10px] font-bold bg-primary px-2 py-0.5 rounded-sm">COMPETICIÓN</span>
-                        </div>
-                        <div class="flex flex-col gap-1 p-4">
-                            <span class="text-[10px] font-bold uppercase text-slate-400 tracking-wider">12 Oct
-                                2023</span>
-                            <h3 class="text-sm font-bold leading-snug text-slate-900 dark:text-white line-clamp-2">Oro
-                                en el Campeonato Nacional</h3>
-                        </div>
-                    </div>
-                    <div
-                        class="min-w-65 snap-center flex flex-col rounded-2xl bg-white dark:bg-slate-800 shadow-md border-b-4 border-accent overflow-hidden">
-                        <div class="h-32 w-full bg-slate-200 bg-cover bg-center relative"
-                            style='background-image: url("./images/bg_default.png");'>
-                            <div
-                                class="absolute bottom-0 left-0 w-full h-1/2 bg-linear-to-t from-black/60 to-transparent">
-                            </div>
-                            <span
-                                class="absolute bottom-2 left-3 text-slate-900 text-[10px] font-bold bg-accent px-2 py-0.5 rounded-sm">EVENTOS</span>
-                        </div>
-                        <div class="flex flex-col gap-1 p-4">
-                            <span class="text-[10px] font-bold uppercase text-slate-400 tracking-wider">05 Nov
-                                2023</span>
-                            <h3 class="text-sm font-bold leading-snug text-slate-900 dark:text-white line-clamp-2">
-                                Jornada de Puertas Abiertas Dragon Boat</h3>
-                        </div>
-                    </div>
-                    <div
-                        class="min-w-65 snap-center flex flex-col rounded-2xl bg-white dark:bg-slate-800 shadow-md border-b-4 border-slate-400 overflow-hidden">
-                        <div class="h-32 w-full bg-slate-200 bg-cover bg-center relative"
-                            style='background-image: url("./images/bg_default.png");;'>
-                            <div
-                                class="absolute bottom-0 left-0 w-full h-1/2 bg-linear-to-t from-black/60 to-transparent">
-                            </div>
-                            <span
-                                class="absolute bottom-2 left-3 text-white text-[10px] font-bold bg-slate-600 px-2 py-0.5 rounded-sm">ENTRENAMIENTO</span>
-                        </div>
-                        <div class="flex flex-col gap-1 p-4">
-                            <span class="text-[10px] font-bold uppercase text-slate-400 tracking-wider">01 Nov
-                                2023</span>
-                            <h3 class="text-sm font-bold leading-snug text-slate-900 dark:text-white line-clamp-2">
-                                Nuevos Horarios de Invierno</h3>
-                        </div>
-                    </div>
-                </div>
-            </div>-->
-            <!--<div class="flex flex-col gap-4 py-2 px-4">
-                <div class="flex items-center justify-between mb-2">
-                    <h2 class="text-lg font-bold tracking-tight text-slate-900 dark:text-white flex items-center gap-2">
-                        <span class="w-1.5 h-6 bg-accent rounded-full"></span>
-                        Galería de Competiciones
-                    </h2>
-                </div>
-                <div class="grid grid-cols-2 gap-3">
-                    <div
-                        class="group relative aspect-square overflow-hidden rounded-2xl bg-slate-100 shadow-sm cursor-pointer">
-                        <img alt="Regata Sevilla"
-                            class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
-                            src="./images/bg_default.png" />
-                        <div
-                            class="absolute inset-0 bg-linear-to-t from-slate-900/80 via-transparent to-transparent flex items-end p-3 opacity-100">
-                            <div>
-                                <span
-                                    class="block text-[10px] font-bold text-accent uppercase tracking-wider mb-0.5">Nacional</span>
-                                <span class="block text-xs font-bold text-white leading-tight">Sevilla 2023</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div
-                        class="group relative aspect-square overflow-hidden rounded-2xl bg-slate-100 shadow-sm cursor-pointer">
-                        <img alt="Dragon Boat"
-                            class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
-                            src="./images/bg_default.png" />
-                        <div
-                            class="absolute inset-0 bg-linear-to-t from-slate-900/80 via-transparent to-transparent flex items-end p-3 opacity-100">
-                            <div>
-                                <span
-                                    class="block text-[10px] font-bold text-accent uppercase tracking-wider mb-0.5">Dragon
-                                    Boat</span>
-                                <span class="block text-xs font-bold text-white leading-tight">Retiro 2023</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div
-                        class="group relative aspect-square overflow-hidden rounded-2xl bg-slate-100 shadow-sm cursor-pointer">
-                        <img alt="Entrenamiento"
-                            class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
-                            src="./images/bg_default.png" />
-                        <div
-                            class="absolute inset-0 bg-linear-to-t from-slate-900/80 via-transparent to-transparent flex items-end p-3 opacity-100">
-                            <div>
-                                <span
-                                    class="block text-[10px] font-bold text-accent uppercase tracking-wider mb-0.5">Local</span>
-                                <span class="block text-xs font-bold text-white leading-tight">Chiclana 2022</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div
-                        class="group relative aspect-square overflow-hidden rounded-2xl bg-slate-100 shadow-sm cursor-pointer">
-                        <img alt="K4 Men"
-                            class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
-                            src="./images/bg_default.png" />
-                        <div
-                            class="absolute inset-0 bg-linear-to-t from-slate-900/80 via-transparent to-transparent flex items-end p-3 opacity-100">
-                            <div>
-                                <span
-                                    class="block text-[10px] font-bold text-accent uppercase tracking-wider mb-0.5">Internacional</span>
-                                <span class="block text-xs font-bold text-white leading-tight">Portugal 2023</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <button
-                    class="mt-2 w-full py-3.5 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-primary dark:text-blue-400 font-bold text-sm shadow-sm hover:bg-blue-50 dark:hover:bg-slate-700 transition-all active:scale-[0.98] flex items-center justify-center gap-2">
-                    <span>Ver galería completa</span>
-                    <span class="material-symbols-outlined text-sm">arrow_forward</span>
-                </button>
-            </div>-->
             <div class="flex flex-col gap-4 py-6 px-4" id="galeria">
                 <div class="flex items-center justify-between mb-4">
                 <h2 class="text-lg font-bold tracking-tight text-slate-900 dark:text-white flex items-center gap-2">
