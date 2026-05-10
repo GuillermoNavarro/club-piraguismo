@@ -1,16 +1,23 @@
 const INFO_MODALIDADES = {
     'embarcaciones': {
-        'piraguismo': {
+        /*'piraguismo': {
             'titulo': 'Piragüismo',
             'descripcion': 'El piragüismo es un deporte acuático que consiste en navegar en una embarcación ligera llamada piragua, utilizando un remo de una sola pala. Es una actividad que combina resistencia, fuerza y técnica, y puede practicarse tanto en aguas tranquilas como en aguas bravas.',
-        },
+        },*/
         'kayak': {
             'titulo': 'Kayak',
             'descripcion': 'El kayak es una modalidad de piragüismo que se caracteriza por el uso de una embarcación cerrada y un remo de doble pala. Los kayaks son más estables y maniobrables que las piraguas tradicionales, lo que los hace ideales para explorar ríos, lagos y costas marinas.',
         },
+        'canoa' : {
+            'titulo': 'Canoa',
+            'descripcion': 'texto vario'
+        },
         'barco dragon': {
             'titulo': 'Barco Dragón',
-            'descripcion': 'El barco dragón es una embarcación tradicional china que se utiliza en competiciones de remo en equipo. Está decorado con una cabeza y una cola de dragón, y puede transportar a un gran número de remeros que trabajan al unísono para propulsar el barco a través del agua.',
+            'descripcion': `<div>
+            <p>El barco dragón es una embarcación tradicional china que se utiliza en competiciones de remo en equipo. Está decorado con una cabeza y una cola de dragón, y puede transportar a un gran número de remeros que trabajan al unísono para propulsar el barco a través del agua.</p>
+            <img src="./images/dragon_boat.jpeg" class="mx-auto w-1/2" alt="dragon boat" />
+            </div>`,
         }
     },
     'social': {
